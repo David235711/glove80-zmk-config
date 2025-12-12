@@ -113,22 +113,22 @@
 
         base_layer {
             bindings = <
-&kp F1      &kp F2       &kp F3        &kp F4       &kp F5                                                                                                       &kp F6         &kp F7       &kp F8        &kp F9          &kp F10
-&kp EQUAL   &kp N1       &kp N2        &kp N3       &kp N4         &kp N5                                                                                &kp N6  &kp N7         &kp N8       &kp N9        &kp N0          &kp MINUS
-&kp PLUS    &kp Q        &kp W         &kp E        &kp R          &kp T                                                                                 &kp Y   &kp U          &kp I        &kp O         &kp P           &kp PIPE
-&kp ESC     &bhm LGUI A  &bhm LCTRL S  &bhm LALT D  &bhm LSHIFT F  &kp G                                                                                 &kp H   &bhm RSHIFT J  &bhm LALT K  &bhm RCTRL L  &bhm RGUI SEMI  &kp APOS
-&kp MINUS   &kp Z        &kp X         &kp C        &kp V          &kp B   &kp LSHIFT   &kp LBRC  &kp LBKT  &kp RBKT              &kp RBRC  &kp RSHIFT   &kp N   &kp M          &kp COMMA    &kp DOT       &kp FSLH        &kp UNDER
-&magic 3 0  &kp EXCL     &kp COLON     &kp LPAR     &kp RPAR               &lt 1 SPACE  &kp BSPC  &kp TAB   &bhm RIGHT_ALT GRAVE  &kp SQT   &lt 2 ENTER          &kp DQT        &kp LT       &kp GT        &kp QMARK       &kp TILDE
+&kp F1      &kp F2       &kp F3        &kp F4         &kp F5                                                                                                                                      &kp F6           &kp F7            &kp F8             &kp F9          &kp F10
+&kp EQUAL   &kp N1       &kp N2        &kp N3         &kp N4          &kp N5                                                                                                              &kp N6  &kp N7           &kp N8            &kp N9             &kp N0          &kp MINUS
+&kp PLUS    &kp Q        &kp W         &kp E          &kp R           &kp T                                                                                                               &kp Y   &kp U            &kp I             &kp O              &kp P           &kp PIPE
+&kp ESC     &bhm LGUI A  &bhm LCTRL S  &bhm LALT D    &bhm LSHIFT F   &kp G                                                                                                               &kp H   &bhm RSHIFT J    &bhm LALT K       &bhm RCTRL L       &bhm RGUI SEMI  &kp APOS
+&kp MINUS   &kp Z        &kp X         &kp C          &kp V           &kp B   &kp LSHIFT   &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RSHIFT   &kp N   &kp M            &kp COMMA         &kp DOT            &kp FSLH        &kp UNDER
+&magic 3 0  &kp EXCL     &kp COLON     &kp LESS_THAN  &kp LEFT_BRACE          &lt 1 SPACE  &kp BSPC          &kp TAB               &bhm RIGHT_ALT GRAVE   &kp SQT            &lt 2 ENTER          &kp RIGHT_BRACE  &kp GREATER_THAN  &kp DOUBLE_QUOTES  &kp QMARK       &kp TILDE
             >;
         };
 
         layer_Lower {
             bindings = <
 &kp C_BRI_DN  &kp C_BRI_UP  &kp C_PREV     &kp C_NEXT      &kp C_PP                                                                                                       &kp C_MUTE         &kp C_VOL_DN     &kp C_VOL_UP      &none            &kp PAUSE_BREAK
-&trans        &none         &none          &kp INS         &kp HOME          &kp END                                                               &kp CAPS               &kp KP_NUM         &kp KP_EQUAL     &kp KP_SLASH      &kp KP_MULTIPLY  &kp PRINTSCREEN
+&trans        &none         &none          &kp INS         &kp HOME          &kp END                                                               &none                  &kp KP_NUM         &kp KP_EQUAL     &kp KP_SLASH      &kp KP_MULTIPLY  &kp PRINTSCREEN
 &trans        &kp LS(N1)    &kp LS(N2)     &kp LS(N3)      &kp LS(N4)        &kp LS(N5)                                                            &kp LS(N6)             &kp LS(N7)         &kp LS(N8)       &kp MINUS         &kp EQUAL        &trans
 &trans        &bhm LGUI N1  &bhm LCTRL N2  &bhm LALT N3    &bhm LSHIFT N4    &kp N5                                                                &kp N6                 &bhm RSHIFT N7     &bhm LALT N8     &bhm RCTRL N9     &bhm RGUI N0     &trans
-&trans        &none         &kp LESS_THAN  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &trans  &trans  &trans  &trans  &trans  &trans  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN  &kp FSLH         &kp BSLH
+&trans        &kp CAPS      &kp LESS_THAN  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &trans  &trans  &trans  &trans  &trans  &trans  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN  &kp FSLH         &kp BSLH
 &magic 3 0    &none         &none          &none           &none                                   &trans  &trans  &trans  &trans  &trans  &trans                         &none              &none            &none             &none            &none
             >;
         };
@@ -139,7 +139,7 @@
 &trans      &trans               &trans            &trans           &trans                 &trans                                                     &trans    &trans         &trans       &trans     &trans   &trans
 &trans      &kp F1               &kp F2            &kp F3           &kp F4                 &kp F5                                                     &kp F6    &kp F7         &kp F8       &kp F9     &kp F10  &trans
 &trans      &bhm LEFT_GUI LC(Z)  &bhm LCTRL LC(X)  &bhm LALT LC(C)  &bhm LEFT_SHIFT LC(V)  &kp LCTRL                                                  &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &none    &trans
-&kp F12     &kp ESC              &none             &none            &kp INSERT             &kp DEL    &trans  &trans  &trans  &trans  &trans  &trans  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &none    &kp F11
+&kp F12     &none                &none             &none            &kp INSERT             &kp DEL    &trans  &trans  &trans  &trans  &trans  &trans  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &none    &kp F11
 &magic 3 0  &trans               &trans            &trans           &trans                            &trans  &trans  &trans  &trans  &trans  &trans            &trans         &trans       &trans     &trans   &trans
             >;
         };
